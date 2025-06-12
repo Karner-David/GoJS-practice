@@ -34,9 +34,9 @@ myDiagram.nodeDataArray = [
 myDiagram.linkDataArray = [
     { from: 2, to: 11, fromLabel: "1", toLabel: "1..*" },
     { from: 2, to: 25, fromLabel: "1", toLabel: "1..*" },
-    { from: 11, to: 25, fromLabel: "1", toLabel: "1..*" },
-    { from: 11, to: 19, fromLabel: "1", toLabel: "1..*" },
-    { from: 19, to: 24, fromLabel: "1", toLabel: "1..*" }
+    { from: 11, to: 25, fromLabel: "1..*", toLabel: "1..*" },
+    { from: 11, to: 19, fromLabel: "1..*", toLabel: "1..*" },
+    { from: 19, to: 24, fromLabel: "1..*", toLabel: "1..*" }
 ]
 
 myDiagram.model = new go.GraphLinksModel(myDiagram.nodeDataArray, myDiagram.linkDataArray);
