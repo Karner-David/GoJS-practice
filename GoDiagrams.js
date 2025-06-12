@@ -5,9 +5,9 @@ const myDiagram =
 
 myDiagram.model = new go.GraphLinksModel(
     [
-        {key: 1, name: "Reg Zazu", favcolor: "pink", source: "./imgs/reg_zazu.jpg"},
-        {key: 2, name: "Nerd Zazu", favcolor: "hotpink", source: "./imgs/nerd_zazu.jpg"},
-        {key: 3, name: "French Zazu", favcolor: "purple", source: "./imgs/french_zazu.jpg"},
+        {key: 1, name: "Reg Zazu", favcolor: "pink", source: "./imgs/reg_zazu.jpg", isGroup: true},
+        {key: 2, name: "Nerd Zazu", favcolor: "hotpink", source: "./imgs/nerd_zazu.jpg", isGroup: true, group: 2},
+        {key: 3, name: "French Zazu", favcolor: "purple", source: "./imgs/french_zazu.jpg", group: 2},
     ],
     [
         {from: 1, to: 2},
