@@ -76,14 +76,14 @@ myDiagram.linkTemplate =
             new go.Shape({strokeWidth: 3, stroke: "black"}),
             new go.TextBlock({
                 segmentIndex: 0,
-                segmentOffset: new go.Point(15, -10), // position above the link
+                segmentOffset: new go.Point(NaN, NaN), // position above the link
                 font: "bold 10pt sans-serif",
                 stroke: "black"
             })
                 .bind("text", "fromLabel"),
             new go.TextBlock({
                 segmentIndex: -1,
-                segmentOffset: new go.Point(-15, -10),
+                segmentOffset: new go.Point(NaN, NaN),
                 font: "bold 10pt sans-serif",
                 stroke: "black"
             })

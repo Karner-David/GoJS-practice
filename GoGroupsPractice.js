@@ -70,10 +70,12 @@ myDiagram.groupTemplate =
             new go.Shape("RoundedRectangle", {fill: "lightblue"}),
             new go.Panel("Vertical", {margin: 5})
                 .add(
+                    go.GraphObject.build("SubGraphExpanderButton", {margin: new go.Margin(5, 5, 0, 0), alignment: go.Spot.Right}),
                     new go.TextBlock({alignment: go.Spot.Right, font: "Bold 12pt Sans-Serif"})
                         .bind("text"),
                     new go.Placeholder({padding: 5})
                 )
+            
         )
         .bind("isSubGraphExpanded", "expanded")
 
